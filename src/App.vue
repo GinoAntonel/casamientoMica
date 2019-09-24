@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-content>
+      <Parallax/>
+      <Fecha/>
+      <HelloWorld/>
+      <Photos/>
+      <br/>
+      <br/>
+      <Regalos/>
+      <br/>
+      <Asistencia/>
+      <Instagram/>
+      <Footer/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld';
+import Parallax from './components/Parallax'
+import Timer from './components/Timer'
+import Photos from './components/Photos'
+import Carrousel from './components/Carrousel'
+import Regalos from './components/Regalos'
+import Asistencia from './components/Asistencia'
+import Instagram from './components/Instagram'
+import Footer from './components/Footer'
+import Fecha from './components/Fecha'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    Parallax,
+    Timer,
+    Photos,
+    Carrousel,
+    Regalos,
+    Asistencia,
+    Instagram,
+    Footer,
+    Fecha,
+  },
+  data: () => ({
+    //
+  }),
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
