@@ -2,7 +2,7 @@
   <v-container grid-list-md text-xs-center>
     <br/>
     <v-layout row wrap>
-      <v-flex lg6 xs12 offset-md-3 >
+      <v-flex lg6 xs12>
         <v-flex class="img">
           <img
           small
@@ -12,7 +12,7 @@
           <h1>IGLESIA</h1>
         </v-flex>
         <v-flex class="infoo">
-          La ceremonia se realizará el d de Noviembre de 2019 a las 16:30 horas en el Convento San Alfonso. 
+          La ceremonia se realizará el dia 2 de Noviembre de 2019 a las 16:30 horas en el Convento San Alfonso. 
           Ingresá al link debajo para recibir las indicaciones para llegar. 
         </v-flex>
         <v-flex class="img">
@@ -23,7 +23,7 @@
         </v-flex>
       </v-flex>
 
-      <v-flex lg6 xs12 offset-md-3  >
+      <v-flex lg6 xs12>
         <v-flex class="img" >
           <img
           small
