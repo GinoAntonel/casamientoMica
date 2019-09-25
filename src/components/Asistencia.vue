@@ -4,7 +4,7 @@
     <br/>
     <br/>
     <p class="textoA">Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!</p>
-    <br/>
+    <p class="textoA">Tenes hasta el 14 de Octubre para confirmar!!</p>
     <br/>
     <v-flex class="btnA">
       <v-btn class="ma-2" outlined rounded color="green" 
@@ -12,7 +12,6 @@
       href='https://docs.google.com/forms/d/e/1FAIpQLSdzqwDvEIbeG0U3XxWlptC-jHhu-idQW6HtN9PJiSTvapgH6A/viewform'
       >CONFIRMAR ASISTENCIA</v-btn>
     </v-flex>
-    <br/>
     <br/>
   </div>
 </template>

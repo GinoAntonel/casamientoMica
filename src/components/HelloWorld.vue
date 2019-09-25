@@ -2,7 +2,7 @@
   <v-container grid-list-md text-xs-center>
     <br/>
     <v-layout row wrap>
-      <v-flex xs6>
+      <v-flex lg6 xs12>
         <v-flex class="img" >
           <img
           small
@@ -23,7 +23,7 @@
         </v-flex>
       </v-flex>
 
-      <v-flex xs6>
+      <v-flex lg6 xs12>
         <v-flex class="img" >
           <img
           small
