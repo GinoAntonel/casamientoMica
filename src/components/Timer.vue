@@ -86,7 +86,7 @@ props: ['starttime', 'endtime', 'trans'],
 <style scoped>
 .datee{
   font-family: "URW Chancery L", cursive;
-  font-size: 40px;
+  font-size: 24px;
   color: white;
 }
 </style>
