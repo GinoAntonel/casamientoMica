@@ -3,19 +3,19 @@
     <br/>
     <v-layout row wrap>
       <v-flex lg6 xs12>
-        <v-flex class="img" >
+        <v-flex class="img" lg12 xs12 >
           <img
           small
           :src="require('../assets/icon_ceremonia.png')" width="150px"/>
         </v-flex>
-        <v-flex class="titleee">
+        <v-flex class="titleee" lg12 xs12>
           <h1>IGLESIA</h1>
         </v-flex>
-        <v-flex class="infoo">
-          La ceremonia se realizará el día 2 de Noviembre de 2019 a las 16:30 horas en el Convento San Alfonso. 
+        <v-flex class="infoo" lg12 xs12>
+          La ceremonia se realizará el d de Noviembre de 2019 a las 16:30 horas en el Convento San Alfonso. 
           Ingresá al link debajo para recibir las indicaciones para llegar. 
         </v-flex>
-        <v-flex class="img">
+        <v-flex class="img" lg12 xs12>
           <v-btn class="ma-2" outlined rounded color="green"
           target="_blank"
           href='https://www.google.com.ar/maps/place/Convento+San+Alfonso/@-31.3048408,-64.2977287,17z/data=!3m1!4b1!4m5!3m4!1s0x94329d06c7decc7f:0x6e0f738ff3e315db!8m2!3d-31.3048408!4d-64.2955347'
