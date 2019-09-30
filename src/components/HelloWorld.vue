@@ -12,7 +12,7 @@
           <h1>IGLESIA</h1>
         </v-flex>
         <v-flex class="infoo">
-          La ceremonia se realizará el dia 2 de Noviembre de 2019 a las 16:30 horas en el Convento San Alfonso. 
+          La ceremonia se realizará el dia 2 de Noviembre de 2019 a las 16:30 horas en Convento San Alfonso. 
           Ingresá al link debajo para recibir las indicaciones para llegar. 
         </v-flex>
         <v-flex class="img">
@@ -33,8 +33,8 @@
           <h1>FIESTA</h1>
         </v-flex>
         <v-flex class="infoo">
-          Te esperamos después de la ceremonia en Estancia Victoria. 
-          En el link de abajo podés encontrar las indicaciones para llegar, te esperamos
+          Después de la ceremonia te esperamos en el salon Estancia Victoria. 
+          En el link de abajo podés encontrar las indicaciones para llegar.
         </v-flex>
         <v-flex class="img">
           <v-btn class="ma-2" rounded outlined color="green"

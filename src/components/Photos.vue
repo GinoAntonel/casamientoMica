@@ -1,19 +1,18 @@
 <template>
   <v-container fluid>
-    <h1 class="titlee">NUESTRA HISTORIA...</h1>
     <br/>
     <v-layout wrap>
       <v-flex lg3 xs12 class="ig">
         <v-img
           aspect-ratio="1"
-          :src="require('../assets/1.jpeg')"
+          :src="require('../assets/portadac.jpg')"
           height='330'
         ></v-img>
       </v-flex>
       <v-flex lg3 xs12 class="ig">
         <v-img 
           aspect-ratio="1"
-          :src="require('../assets/2.jpeg')"
+          :src="require('../assets/2.jpg')"
           height='330'>
           <div class="fill-height bottom-gradient"></div>
         </v-img>

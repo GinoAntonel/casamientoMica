@@ -3,8 +3,7 @@
     <h1 class="titlee">CONFIRMAR ASISTENCIA</h1>
     <br/>
     <br/>
-    <p class="textoA">Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!</p>
-    <p class="textoA">Tenes hasta el 14 de Octubre para confirmar!!</p>
+    <p class="textoA">Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia hasta el 14 de Octubre!</p>
     <br/>
     <v-flex class="btnA">
       <v-btn class="ma-2" outlined rounded color="green" 

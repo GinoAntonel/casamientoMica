@@ -2,11 +2,7 @@
   <div id="template">
     <div v-show ="statusType !== 'expired'">
         <div class="datee">
-          <div class="status-tag" :class="statusType">{{ statusText }}</div>
-          <span class="number">{{ days }} {{ wordString.day }} 
-            {{ hours }} {{ wordString.hours }} 
-            {{ minutes }} {{ wordString.minutes }} 
-            {{ seconds }} {{ wordString.seconds }}</span>
+          <span class="number">{{ days }} {{ wordString.day }} {{ hours }}:{{ minutes }}:{{ seconds }}</span>
         </div>
       </div>
   </div>
@@ -86,7 +82,7 @@ props: ['starttime', 'endtime', 'trans'],
 <style scoped>
 .datee{
   font-family: "URW Chancery L", cursive;
-  font-size: 24px;
+  font-size: 32px;
   color: white;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-parallax :src="require('../assets/instapicb.jpg')" >
+  <v-parallax :src="require('../assets/portadad3.jpg')" >
     <div class="img">
       <img :src="require('../assets/icon_instagram.png')"/>
       <h1 class="titlee">#MICAYTOMI2019</h1>
