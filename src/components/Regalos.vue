@@ -4,7 +4,7 @@
     <br/>
     <img width="150px" :src="require('../assets/icono_regalo.png')" />
     <br/>
-    <p class="textoo">El regalo es opcional, la asistencia obligatoria.<br/> Si queres tener un detalle con nosotros...</p>
+    <p class="textoo">El regalo es opcional, la asistencia obligatoria.<br/> Si queres ayudarnos con nuestra luna de miel...</p>
     <br/>
     <Dialog/>
     <br/>
