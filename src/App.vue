@@ -1,8 +1,9 @@
 <template>
   <v-app>
     <v-content>
+      <Toolbar/>
       <Parallax/>
-      <Fecha/>
+      <Informacion/>
       <HelloWorld/>
       <Photos/>
       <br/>
@@ -19,28 +20,28 @@
 <script>
 import HelloWorld from './components/HelloWorld';
 import Parallax from './components/Parallax'
-import Timer from './components/Timer'
 import Photos from './components/Photos'
 import Carrousel from './components/Carrousel'
 import Regalos from './components/Regalos'
 import Asistencia from './components/Asistencia'
 import Instagram from './components/Instagram'
 import Footer from './components/Footer'
-import Fecha from './components/Fecha'
+import Toolbar from './components/Toolbar'
+import Informacion from './components/Informacion'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Parallax,
-    Timer,
     Photos,
     Carrousel,
     Regalos,
     Asistencia,
     Instagram,
     Footer,
-    Fecha,
+    Toolbar,
+    Informacion
   },
   data: () => ({
     //

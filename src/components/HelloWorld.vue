@@ -1,49 +1,9 @@
 <template>
   <v-container grid-list-md text-xs-center>
     <br/>
-    <v-layout row wrap>
-      <v-flex lg6 xs12>
-        <v-flex class="img">
-          <img
-          small
-          :src="require('../assets/icon_ceremonia.png')" width="150px"/>
-        </v-flex>
-        <v-flex class="titleee">
-          <h1>IGLESIA</h1>
-        </v-flex>
-        <v-flex class="infoo">
-          La ceremonia se realizará el dia 2 de Noviembre de 2019 a las 16:30 horas en Convento San Alfonso. 
-          Ingresá al link debajo para recibir las indicaciones para llegar. 
-        </v-flex>
-        <v-flex class="img">
-          <v-btn class="ma-2" outlined rounded color="green"
-          target="_blank"
-          href='https://www.google.com.ar/maps/place/Convento+San+Alfonso/@-31.3048408,-64.2977287,17z/data=!3m1!4b1!4m5!3m4!1s0x94329d06c7decc7f:0x6e0f738ff3e315db!8m2!3d-31.3048408!4d-64.2955347'
-          >Llegar a la Ceremonia</v-btn>
-        </v-flex>
-      </v-flex>
-
-      <v-flex lg6 xs12>
-        <v-flex class="img" >
-          <img
-          small
-          :src="require('../assets/icon_fiesta.png')" width="150px"/>
-        </v-flex>
-        <v-flex class="titleee">
-          <h1>FIESTA</h1>
-        </v-flex>
-        <v-flex class="infoo">
-          Después de la ceremonia te esperamos en el salon Estancia Victoria. 
-          En el link de abajo podés encontrar las indicaciones para llegar.
-        </v-flex>
-        <v-flex class="img">
-          <v-btn class="ma-2" rounded outlined color="green"
-          target="_blank"
-          href='https://www.google.com.ar/maps/place/Estancia+Victoria/@-31.2676309,-64.3335198,17z/data=!3m1!4b1!4m5!3m4!1s0x943282a956aeb473:0x5b82fc9c9d94de6b!8m2!3d-31.2676309!4d-64.3313258'
-          >Llegar a la Fiesta</v-btn>
-        </v-flex>
-      </v-flex>
-    </v-layout>
+    <div class="img">
+      <img :src="require('../assets/Mapas2P.png')" width="850px" height="350px"/>
+    </div>
     <br/>
   </v-container>
 </template>
