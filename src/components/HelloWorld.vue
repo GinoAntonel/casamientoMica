@@ -2,7 +2,7 @@
   <v-container grid-list-md text-xs-center>
     <br/>
     <div class="img">
-      <img :src="require('../assets/Mapas2P.png')" width="850px" height="350px"/>
+      <!-- <img :src="require('../assets/Mapas2P.png')" width="850px" height="350px"/> -->
     </div>
     <br/>
   </v-container>
