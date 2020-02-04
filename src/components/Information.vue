@@ -1,9 +1,16 @@
 <template>
-  <v-container fluid>
+  <v-container fluid id="pinformation">
     <v-layout wrap justify-center>
       <v-flex xs12>
-        dd
+        <v-flex xs4>
+        <div data-aos="zoom-out-right">
+          <v-img
+          :src="require('../assets/information2.png')"
+          ></v-img>
+        </div>
+        </v-flex>
       </v-flex>
+      
       <v-flex lg3 xs12>
 
         <div data-aos="fade-right" data-aos-duration="2000">
@@ -148,5 +155,7 @@
 </style>
 
 <script>
-export default {};
+export default {
+
+};
 </script>

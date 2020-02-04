@@ -2,13 +2,7 @@
   <v-container fluid>
     <br/>
     <v-layout wrap>
-      <v-flex lg3 xs12 class="ig">
-        <!-- <v-img
-          aspect-ratio="1"
-          :src="require('../assets/portadac.jpg')"
-          height='330'
-        ></v-img> -->
-      </v-flex>
+
       <v-flex lg3 xs12 class="ig">
         <!-- <v-img 
           aspect-ratio="1"

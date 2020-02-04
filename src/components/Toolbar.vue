@@ -7,7 +7,13 @@
 
       <v-toolbar-items>
         <v-divider inset vertical></v-divider>
-        <v-btn text>INFO</v-btn>
+        
+          <router-link to="/information#pinformation" @click.native="scrollFix('/information#pinformation')">
+            <v-btn text>
+              INFO
+            </v-btn>
+          </router-link>
+        
         <v-divider inset vertical></v-divider>
         <v-btn text>Link 2</v-btn>
         <v-divider inset vertical></v-divider>
