@@ -4,6 +4,7 @@
       <Toolbar/>
       <Parallax/>
       <Information/>
+      <Gallery/>
     </v-content>
   </v-app>
 </template>
@@ -12,14 +13,15 @@
 import Toolbar from './Toolbar'
 import Information from './Information'
 import Parallax from './Parallax'
-
+import Gallery from './Gallery' 
 
 export default {
   name: 'Base',
   components: {
     Toolbar,
     Information,
-    Parallax
+    Parallax,
+    Gallery
   },
 }
 </script>
