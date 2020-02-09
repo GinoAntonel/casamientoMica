@@ -1,26 +1,35 @@
 <template>
-  <div>
-    <button @click="showSingle">
-      Show Single
-    </button>
-    <button @click="showMultiple">Show a group of pictures.</button>
-    <VueEasyLightbox
-      :visible="visible"
-      :imgs="imgs"
-      :index="index"
-      @hide="handleHide"
-    ></VueEasyLightbox>
+  <v-container fluid id="pprocess">
+    <v-layout wrap justify-center>
+      <v-flex xs12>
+        <v-flex xs4>
+        <div data-aos="zoom-out-right">
+          <v-img
+          :src="require('../assets/process.png')"
+          ></v-img>
+        </div>
+        </v-flex>
+      </v-flex>
+      <v-flex lg3 xs12 >
+        <v-img @click="showMultiple(index=0)" class="size" :src="require('../assets/duplex.jpg')"/>
+      </v-flex>
+      
+      <v-flex lg3 xs12>
+        <img @click="showMultiple(index=1)" class="size" :src="require('../assets/duplex1.jpg')"/>
+      </v-flex>
 
-    <!-- Component name: 'vue-easy-lightbox' -->
-    <!--
-      <vue-easy-lightbox
+      <v-flex lg3 xs12>
+        <img @click="showMultiple(index=2)" class="size" :src="require('../assets/duplex.jpg')"/>
+      </v-flex>
+
+      <VueEasyLightbox
         :visible="visible"
         :imgs="imgs"
         :index="index"
         @hide="handleHide"
-      ></vue-easy-lightbox>
-     -->
-  </div>
+      ></VueEasyLightbox>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
@@ -34,7 +43,6 @@ export default {
     return {
       imgs: 'https://picsum.photos/510/300?random',  // Img Url , string or Array
       visible: false,
-      index: 0   // default
     }
   },
   methods: {
@@ -42,9 +50,9 @@ export default {
       this.imgs = 'https://picsum.photos/510/300?random'
       this.show()
     },
-    showMultiple() {
-      this.imgs = ['https://picsum.photos/510/300?random', 'https://picsum.photos/510/300?random']
-      this.index = 1  // index of imgList
+    showMultiple(index) {
+      this.imgs = [require('../assets/duplex.jpg'), require('../assets/duplex1.jpg'), require('../assets/duplex.jpg')]
+      this.index = index  // index of imgList
       this.show()
     },
     show() {
@@ -56,3 +64,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.size{
+  max-width: 370px;
+}
+</style>

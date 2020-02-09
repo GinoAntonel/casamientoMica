@@ -5,7 +5,7 @@
     align="center"
     justify="center"
     >
-      <!-- <img :src="require('../assets/foto.png')" width="350px"/> -->
+      <!-- <img :src="require('../assets/duplex.jpg')" width="350px"/> -->
     </v-row>
   </v-parallax>
 </template>

@@ -7,27 +7,31 @@ import VueRouter from "vue-router";
 import Base from './components/Base.vue';
 import Information from './components/Information.vue'
 
-Vue.use(VueRouter)
+const VueScrollTo = require('vue-scrollto');
 
+Vue.use(VueScrollTo)
+Vue.use(VueRouter)
 Vue.config.productionTip = false
+
+
 const router = new VueRouter({
   mode: "history",
   routes: [
     { path: '', component: Base },
-    { path: '/information', component: Information },
+    { path: '/information', component: Information, name: 'information' },
   ],
-  scrollBehavior: function(to, from, savedPosition) {
-    if (to.hash) {
-      return {selector: to.hash}
-    } else {
-      return {x: 0, y: 0}
-    }
-  },
+  pushWithAnchor: function (routeName, toHash) {
+    const fromHash = router.history.current.hash
+    fromHash !== toHash || !fromHash
+      ? router.push({ name: routeName, hash: toHash })
+      : router.push({ name: routeName, hash: fromHash }, undefined, () => { window.location.href = toHash })
+  }
+
 })
+
 
 new Vue({
   vuetify,
-  router,
   created() {
     AOS.init()
   },

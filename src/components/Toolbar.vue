@@ -7,30 +7,15 @@
 
       <v-toolbar-items>
         <v-divider inset vertical></v-divider>
-        
-          <router-link to="/information#pinformation" @click.native="scrollFix('/information#pinformation')">
-            <v-btn text>
-              INFO
-            </v-btn>
-          </router-link>
-        
+        <v-btn text v-scroll-to="'#pinformation'">Informacion</v-btn>
         <v-divider inset vertical></v-divider>
-        <v-btn text>Link 2</v-btn>
+        <v-btn text v-scroll-to="'#plocation'">Ubicacion</v-btn>
         <v-divider inset vertical></v-divider>
-        <v-btn text>Link 3</v-btn>
+        <v-btn text v-scroll-to="'#pprocess'">Proceso</v-btn>
+        <v-divider inset vertical></v-divider>
+        <v-btn text v-scroll-to="'#pcontact'">Contacto</v-btn>
       </v-toolbar-items>
 
-      <template v-if="$vuetify.breakpoint.smAndUp">
-        <v-btn icon>
-          <v-icon>mdi-export-variant</v-icon>
-        </v-btn>
-        <v-btn icon>
-          <v-icon>mdi-delete-circle</v-icon>
-        </v-btn>
-        <v-btn icon>
-          <v-icon>mdi-plus-circle</v-icon>
-        </v-btn>
-      </template>
     </v-toolbar>
   </div>
 </template>
