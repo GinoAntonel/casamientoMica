@@ -7,19 +7,20 @@
             <v-img :src="require('../assets/location.png')"></v-img>
           </div>
         </v-flex>
-        <h1>hola</h1>
-        <v-flex xs4>
-          <v-mapbox
-            access-token="pk.eyJ1IjoiZmFjdWJhcmFmYW5pIiwiYSI6ImNrNmg5OGw5MDAwcHMzZ253Nm4ybjh2c2sifQ.Ho9wbVfbEjr8_CZcK_QYLA"
-            map-style="mapbox://styles/mapbox/light-v10"
-            :center="[-31.378604, -64.269823]"
-            :zoom="10"
-            :pitch="60"
-            :bearing="-132"
-            :min-zoom="5"
-            id="map"
-            ref="map"
-          ></v-mapbox>
+        <v-flex xs12 >
+          <div data-aos="zoom-out-right">
+            <v-mapbox
+              access-token="pk.eyJ1IjoiZmFjdWJhcmFmYW5pIiwiYSI6ImNrNmg5OGw5MDAwcHMzZ253Nm4ybjh2c2sifQ.Ho9wbVfbEjr8_CZcK_QYLA"
+              map-style="mapbox://styles/mapbox/streets-v11"
+              :center="[-64.27024,-31.37853]"
+              :zoom="15"
+              :pitch="0"
+              :bearing="-132"
+              :min-zoom="5"
+              id="map"
+              ref="map"
+            ></v-mapbox>
+          </div>
         </v-flex>
       </v-flex>
     </v-layout>
@@ -33,8 +34,5 @@
 #map {
   width: 100%;
   height: 300px;
-  position: absolute;
-  margin: 0;
-  z-index: 1;
 }
 </style>
