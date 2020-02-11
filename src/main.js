@@ -6,9 +6,12 @@ import 'aos/dist/aos.css'
 import VueRouter from "vue-router";
 import Base from './components/Base.vue';
 import Information from './components/Information.vue'
+import Vue2MapboxGL from 'vue2mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 
 const VueScrollTo = require('vue-scrollto');
-
+Vue.use(Vue2MapboxGL);
 Vue.use(VueScrollTo)
 Vue.use(VueRouter)
 Vue.config.productionTip = false

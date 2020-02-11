@@ -4,20 +4,37 @@
       <v-flex xs12>
         <v-flex xs4>
           <div data-aos="zoom-out-right">
-            <v-img
-            :src="require('../assets/location.png')"
-            ></v-img>
+            <v-img :src="require('../assets/location.png')"></v-img>
           </div>
+        </v-flex>
+        <h1>hola</h1>
+        <v-flex xs4>
+          <v-mapbox
+            access-token="pk.eyJ1IjoiZmFjdWJhcmFmYW5pIiwiYSI6ImNrNmg5OGw5MDAwcHMzZ253Nm4ybjh2c2sifQ.Ho9wbVfbEjr8_CZcK_QYLA"
+            map-style="mapbox://styles/mapbox/light-v10"
+            :center="[-31.378604, -64.269823]"
+            :zoom="10"
+            :pitch="60"
+            :bearing="-132"
+            :min-zoom="5"
+            id="map"
+            ref="map"
+          ></v-mapbox>
         </v-flex>
       </v-flex>
     </v-layout>
   </v-container>
-</template>>
+</template>
 
 <script>
-
 </script>
 
 <style scoped>
-
-</style>>
+#map {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  margin: 0;
+  z-index: 1;
+}
+</style>

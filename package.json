@@ -10,16 +10,20 @@
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "core-js": "^2.6.5",
+    "mapbox-gl": "^1.7.0",
+    "mapbox-gl-vue": "^2.0.4",
     "vue": "^2.6.10",
     "vue-easy-lightbox": "^0.9.1",
+    "vue-mapbox": "^0.4.1",
     "vue-router": "^3.1.5",
     "vue-scrollto": "^2.17.1",
+    "vue2mapbox-gl": "^0.12.0",
     "vuetify": "^2.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-service": "^4.2.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
