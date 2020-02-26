@@ -7,19 +7,15 @@
             <v-img :src="require('../assets/location.png')"></v-img>
           </div>
         </v-flex>
-        <v-flex xs12 >
+        <v-flex xs8>
           <div data-aos="zoom-out-right">
-            <v-mapbox
-              access-token="pk.eyJ1IjoiZmFjdWJhcmFmYW5pIiwiYSI6ImNrNmg5OGw5MDAwcHMzZ253Nm4ybjh2c2sifQ.Ho9wbVfbEjr8_CZcK_QYLA"
-              map-style="mapbox://styles/mapbox/streets-v11"
-              :center="[-64.27024,-31.37853]"
-              :zoom="15"
-              :pitch="0"
-              :bearing="-132"
-              :min-zoom="5"
-              id="map"
-              ref="map"
-            ></v-mapbox>
+            <l-map :zoom="zoom" :center="center" style="height: 500px; width: 100%">
+              <l-tile-layer :url="url" :attribution="attribution" />
+              <l-marker :lat-lng="[-31.37845,-64.27061]" :icon ="icon"/>
+              <l-polygon :lat-lngs="polygon.latlngs" :color="polygon.color">
+                <l-popup content="El Balcon" />
+              </l-polygon>
+            </l-map>
           </div>
         </v-flex>
       </v-flex>
@@ -28,11 +24,47 @@
 </template>
 
 <script>
+// import { latLng } from "leaflet";
+import {
+  LMap,
+  LTileLayer,
+  LMarker,
+  LPolygon,
+} from "vue2-leaflet";
+
+export default {
+  name: "GeometryTest",
+  components: {
+    LMap,
+    LTileLayer,
+    LMarker,
+    LPolygon,
+  },
+  data() {
+    return {
+      zoom: 16,
+      center: [-31.37855, -64.26939],
+      polygon: {
+        latlngs: [
+          [-31.37342, -64.27193],
+          [-31.37297, -64.27076],
+          [-31.37786, -64.26862],
+          [-31.37786, -64.26998]
+        ],
+        color: "#ff00ff"
+      },
+      url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      attribution:
+        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    };
+  },
+};
 </script>
 
 <style scoped>
 #map {
   width: 100%;
   height: 300px;
+  margin: 10px;
 }
 </style>

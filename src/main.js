@@ -6,14 +6,15 @@ import 'aos/dist/aos.css'
 import VueRouter from "vue-router";
 import Base from './components/Base.vue';
 import Information from './components/Information.vue'
-import Vue2MapboxGL from 'vue2mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
+import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
+import 'leaflet/dist/leaflet.css';
 
 const VueScrollTo = require('vue-scrollto');
-Vue.use(Vue2MapboxGL);
 Vue.use(VueScrollTo)
 Vue.use(VueRouter)
+Vue.component('l-map', LMap);
+Vue.component('l-tile-layer', LTileLayer);
+Vue.component('l-marker', LMarker);
 Vue.config.productionTip = false
 
 

@@ -11,15 +11,15 @@
         </v-flex>
       </v-flex>
       <v-flex lg3 xs12 >
-        <v-img @click="showMultiple(index=0)" class="size" :src="require('../assets/duplex.jpg')"/>
+        <v-img @click="showMultiple(index=0)" class="size" :src="require('../assets/duplex1.jpg')"/>
       </v-flex>
       
       <v-flex lg3 xs12>
-        <img @click="showMultiple(index=1)" class="size" :src="require('../assets/duplex1.jpg')"/>
+        <img @click="showMultiple(index=1)" class="size" :src="require('../assets/duplex2.jpg')"/>
       </v-flex>
 
       <v-flex lg3 xs12>
-        <img @click="showMultiple(index=2)" class="size" :src="require('../assets/duplex.jpg')"/>
+        <img @click="showMultiple(index=2)" class="size" :src="require('../assets/duplex3.jpg')"/>
       </v-flex>
 
       <VueEasyLightbox
@@ -51,7 +51,7 @@ export default {
       this.show()
     },
     showMultiple(index) {
-      this.imgs = [require('../assets/duplex.jpg'), require('../assets/duplex1.jpg'), require('../assets/duplex.jpg')]
+      this.imgs = [require('../assets/duplex1.jpg'), require('../assets/duplex2.jpg'), require('../assets/duplex3.jpg')]
       this.index = index  // index of imgList
       this.show()
     },
