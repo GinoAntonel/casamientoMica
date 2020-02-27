@@ -11,10 +11,11 @@
           <div data-aos="zoom-out-right">
             <l-map :zoom="zoom" :center="center" style="height: 500px; width: 100%">
               <l-tile-layer :url="url" :attribution="attribution" />
-              <l-marker :lat-lng="[-31.37845,-64.27061]" :icon ="icon"/>
+              <l-marker :lat-lng="[-31.37845,-64.27061]" :icon="icon" />
               <l-polygon :lat-lngs="polygon.latlngs" :color="polygon.color">
                 <l-popup content="El Balcon" />
               </l-polygon>
+              <l-polyline :lat-lngs="polyline.latlngs" :color="polyline.color" />
             </l-map>
           </div>
         </v-flex>
@@ -25,12 +26,7 @@
 
 <script>
 // import { latLng } from "leaflet";
-import {
-  LMap,
-  LTileLayer,
-  LMarker,
-  LPolygon,
-} from "vue2-leaflet";
+import { LMap, LTileLayer, LMarker, LPolygon, LPolyline } from "vue2-leaflet";
 
 export default {
   name: "GeometryTest",
@@ -39,6 +35,7 @@ export default {
     LTileLayer,
     LMarker,
     LPolygon,
+    LPolyline
   },
   data() {
     return {
@@ -53,11 +50,20 @@ export default {
         ],
         color: "#ff00ff"
       },
+      polyline: {
+        latlngs: [
+          [-31.37794, -64.27295],
+          [-31.37234, -64.27278],
+          [-31.378, -64.27059],
+          [-31.37794, -64.27295]
+        ],
+        color: "#ff00ff"
+      },
       url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     };
-  },
+  }
 };
 </script>
 
