@@ -3,9 +3,10 @@
     <v-content>
       <Toolbar/>
       <Parallax/>
+      <br/>
       <Information/>
-      <Location/>
       <Gallery/>
+      <Location/>
       <Contact/>
     </v-content>
   </v-app>
