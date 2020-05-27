@@ -22,7 +22,7 @@
             </l-map>
             <br/>
             <div class="text-center">
-              <v-btn rounded outlined id="color0" dark>Ir a la direccion</v-btn>
+              <v-btn target="_blank" rounded outlined id="color0" dark href="https://www.google.com.ar/maps/place/31%C2%B022'41.4%22S+64%C2%B016'14.9%22W/@-31.378166,-64.273008,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x0:0x0!2zMzHCsDIyJzQxLjIiUyA2NMKwMTYnMTQuNiJX!3b1!8m2!3d-31.37812!4d-64.270717!3m5!1s0x0:0x0!7e2!8m2!3d-31.3781658!4d-64.2708136">Ir a la direccion</v-btn>
             </div>
           </div>
         </v-flex>
